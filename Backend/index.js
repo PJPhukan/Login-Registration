@@ -14,6 +14,7 @@ app.use(cors());
 
 //Availble routes
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/data', require('./routes/data'));
 
 
 app.listen(port,()=>{
