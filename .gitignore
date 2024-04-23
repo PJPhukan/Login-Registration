@@ -1,2 +1,7 @@
 Login-Registration/Frontend
 node_modules
+.env
+
+# Frontend/Login-Registration/Backend
+node_modules
+.env
