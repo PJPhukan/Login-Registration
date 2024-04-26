@@ -1,42 +1,208 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  background: url(./assets/bg.jpg) no-repeat center center/cover;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+section {
+  /* height: 70vh; */
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+/* Navber section css  */
+.navber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 559px) {
+  ul {
+    padding: 0;
+    gap: 0.5rem;
+  }
+  li {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+/*  Home section */
+
+/*  Login section */
+
+.container {
+  border: 1.5px solid rgb(255, 255, 255);
+  width: 28rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
   padding: 2rem;
+  border-radius: 15px;
+  margin-top: 5rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+.text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.679);
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+label {
+  padding-bottom: 0.5rem;
+}
+input[type="email"],
+input[type="password"] {
+  border: 1px solid rgb(253, 253, 253);
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 0.7rem;
+}
+input::placeholder {
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.642);
+}
+.forgotPassword {
+  margin: 0.5rem 0;
+  color: blue;
+  font-size: 0.8rem;
+  text-align: start !important;
+}
+.submit {
+  width: 60%;
+  margin: 1.5rem auto;
+  font-weight: 600;
   text-align: center;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.or {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 1.2rem;
+  overflow: hidden;
+  z-index: 11;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.or::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 10;
+  right: 53%;
+  top: 50%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.or::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 10;
+  left: 53%;
+  top: 50%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+button{
+  border: 1px solid white;
+  border-radius: 5px;
+margin: 1rem;
+}
+.login-with{
+  width: 100%;
+  background: transparent;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.login-with a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px ;
+  gap: 4px;
+}
+
+img{
+  width: 40px;
+}
+span{
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 559px) {
+  .container {
+    width: 22rem;
+    margin-bottom: 1rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+/*  Registration section */
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
+input{
+  border: 1px solid rgb(253, 253, 253);
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 0.7rem;
 }
